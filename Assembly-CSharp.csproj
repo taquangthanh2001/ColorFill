@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -60,7 +60,56 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.36f1-x86_64\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ConfirmDialog.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\SceneStartup.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Logo.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\UIEvents.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\AdsManager.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\AdMob.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\Colors.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\DrawingContents.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ShapesTable.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ScrollSlider.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ShapesManager.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\EscapeEvent.cs" />
     <Compile Include="Assets\ColoringManager.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ShapesCanvas.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Group.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\BezierPath.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Tool.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\TableShape.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\CameraDrag.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\DirtyUtil.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\History.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\CursorZoomCamera.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ShapePart.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ToolContent.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\ChartboostAd.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Line.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Area.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\PaintLine.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Shape.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\CommonUtil.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\WebPrint.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\SingletonManager.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\ThicknessSize.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\WorldSpaceRender.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\AudioSources.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\UnityAd.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\Links.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\GameManager.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\OSCursorManager.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\WhiteArea.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Utility\AdPackage.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\Pointer.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\CameraZoom.cs" />
+    <Compile Include="Assets\DrawingAndColoring Extra\Scripts\Game\DrawCanvas.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\DrawingAndColoring Extra\Scenes\Landscape\ReadMe.txt" />
+    <None Include="Assets\DrawingAndColoring Extra\Scenes\Portrait\ReadMe.txt" />
+    <None Include="Assets\DrawingAndColoring Extra\Version Changes.txt" />
+    <None Include="Assets\DrawingAndColoring Extra\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1053,6 +1102,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
